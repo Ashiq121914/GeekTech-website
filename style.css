@@ -2,3 +2,32 @@ body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
+
+
+/* header section */
+
+/* <!-- navbar section --> */
+#Logo{
+    color: #4A4A4A;
+    font-weight: 600;
+}
+/* carousel section */
+.carousel-item::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: black;
+    opacity: .7;
+    border-radius: 9px;
+}
+
+@media (max-width:500px){
+    .carousel-item img{
+        height: 400px;
+        object-fit: cover;
+    }
+}
